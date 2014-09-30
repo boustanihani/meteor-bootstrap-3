@@ -3,7 +3,7 @@
 Package.describe({
   name: "boustanihani:bootstrap-3",
   summary: "HTML, CSS, and JS framework for developing responsive, mobile first projects on the web.",
-  version: "3.2.0",
+  version: "3.2.2",
   git: "https://github.com/boustanihani/meteor-bootstrap-3.git"
 });
 
