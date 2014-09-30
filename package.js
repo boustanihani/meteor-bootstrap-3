@@ -1,20 +1,22 @@
 Package.describe({
-  name: "mizzao:bootstrap-3",
+  name: "boustanihani:bootstrap-3",
   summary: "HTML, CSS, and JS framework for developing responsive, mobile first projects on the web.",
   version: "3.2.0",
-  git: "https://github.com/mizzao/meteor-bootstrap-3.git"
+  git: "https://github.com/boustanihani/meteor-bootstrap-3.git"
 });
 
-Package.onUse(function (api) {
-  api.versionsFrom("METEOR@0.9.2.2");
+Package.onUse(function(api) {
+  api.versionsFrom("METEOR@0.9.2.3");
 
   api.use('jquery');
 
   var path = Npm.require('path');
   var asset_path = path.join('bootstrap-3');
-  api.addFiles(path.join(asset_path, 'css', 'bootstrap.css'), 'client');
-  api.addFiles(path.join(asset_path, 'js', 'bootstrap.js'), 'client');
 
+  // css
+  api.addFiles(path.join(asset_path, 'css', 'bootstrap.css'), 'client');
+  // js
+  api.addFiles(path.join(asset_path, 'js', 'bootstrap.js'), 'client');
   // fonts
   api.addFiles(path.join(asset_path, 'fonts', 'glyphicons-halflings-regular.eot'), 'client');
   api.addFiles(path.join(asset_path, 'fonts', 'glyphicons-halflings-regular.ttf'), 'client');
