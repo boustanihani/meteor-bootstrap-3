@@ -1,3 +1,5 @@
+// meteor publish --create
+
 Package.describe({
   name: "boustanihani:bootstrap-3",
   summary: "HTML, CSS, and JS framework for developing responsive, mobile first projects on the web.",
